@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>System kontroli dostępu dla firm | Polsystem</title>
+  <meta name="description" content="Umów bezpłatną konsultację systemu kontroli dostępu Polsystem. Zarządzaj uprawnieniami, przejściami, strefami, alarmami i integracjami w jednym rozwiązaniu.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#3b28cc">
+  <link rel="icon" href="../assets/polsystem-logo.png">
+  <link rel="preload" href="../assets/plus-jakarta-sans-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="../styles.css?v=20261112-4">
+</head>
+<body>
+  <a class="skip-link" href="#formularz">Przejdź do formularza</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="https://polsystem.pl/" aria-label="Polsystem — strona główna">
+        <img src="../assets/polsystem-logo.png" width="1237" height="172" alt="Polsystem">
+      </a>
+      <div class="header-contact">
+        <span>Wolisz porozmawiać?</span>
+        <a href="tel:+48692430193">+48 692 430 193</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="form-column" id="formularz">
+          <div class="form-card">
+            <div class="form-heading">
+              <div>
+                <span class="form-kicker">Bezpłatna konsultacja</span>
+                <h1>Dobierzmy kontrolę dostępu do Twojego obiektu</h1>
+              </div>
+              <span class="time-badge" aria-label="Wypełnienie zajmuje około dwóch minut">~2 min</span>
+            </div>
+
+            <div class="progress" aria-label="Postęp formularza">
+              <div class="progress-copy"><span id="step-label">Krok 1 z 4</span><span id="progress-value">25%</span></div>
+              <div class="progress-track"><span id="progress-bar"></span></div>
+            </div>
+
+            <form id="lead-form" action="mailto:biuro@polsystem.pl" method="post" enctype="text/plain" novalidate>
+              <fieldset class="form-step is-active" data-step="0">
+                <legend>Ile przejść lub punktów dostępu ma obejmować system?</legend>
+                <p class="question-help">Uwzględnij drzwi, bramy, szlabany i inne kontrolowane przejścia.</p>
+                <div class="option-grid">
+                  <label class="option"><input type="radio" name="access_points" value="1–5"><span><b>A</b>1–5</span></label>
+                  <label class="option"><input type="radio" name="access_points" value="6–20"><span><b>B</b>6–20</span></label>
+                  <label class="option"><input type="radio" name="access_points" value="21–50"><span><b>C</b>21–50</span></label>
+                  <label class="option"><input type="radio" name="access_points" value="51–100"><span><b>D</b>51–100</span></label>
+                  <label class="option option-wide"><input type="radio" name="access_points" value="Ponad 100"><span><b>E</b>Ponad 100</span></label>
+                </div>
+                <p class="field-error" data-error="access_points" role="alert"></p>
+                <div class="step-actions step-actions-end"><button class="button button-primary next-step" type="button">Dalej <span aria-hidden="true">→</span></button></div>
+              </fieldset>
+
+              <fieldset class="form-step" data-step="1" hidden>
+                <legend>Jakiego typu obiekt chcesz zabezpieczyć?</legend>
+                <p class="question-help">Wybierz odpowiedź najbliższą planowanemu wdrożeniu.</p>
+                <div class="option-grid option-grid-single">
+                  <label class="option"><input type="radio" name="facility_type" value="Biuro lub siedziba"><span><b>A</b>Biuro lub siedziba</span></label>
+                  <label class="option"><input type="radio" name="facility_type" value="Zakład produkcyjny"><span><b>B</b>Zakład produkcyjny</span></label>
+                  <label class="option"><input type="radio" name="facility_type" value="Magazyn lub centrum logistyczne"><span><b>C</b>Magazyn lub centrum logistyczne</span></label>
+                  <label class="option"><input type="radio" name="facility_type" value="Wiele obiektów lub lokalizacji"><span><b>D</b>Wiele obiektów lub lokalizacji</span></label>
+                </div>
+                <p class="field-error" data-error="facility_type" role="alert"></p>
+                <div class="step-actions"><button class="button button-secondary prev-step" type="button">← Wstecz</button><button class="button button-primary next-step" type="button">Dalej <span aria-hidden="true">→</span></button></div>
+              </fieldset>
+
+              <fieldset class="form-step" data-step="2" hidden>
+                <legend>Co jest najważniejsze w pierwszej kolejności?</legend>
+                <p class="question-help">Wybierz najważniejszy obszar.</p>
+                <div class="option-grid option-grid-single">
+                  <label class="option"><input type="radio" name="priority" value="Kontrola wejść i uprawnień"><span><b>A</b>Kontrola wejść i uprawnień</span></label>
+                  <label class="option"><input type="radio" name="priority" value="Rejestr przejść i raportowanie"><span><b>B</b>Rejestr przejść i raportowanie</span></label>
+                  <label class="option"><input type="radio" name="priority" value="Obsługa bram, szlabanów lub stref"><span><b>C</b>Obsługa bram, szlabanów lub stref</span></label>
+                  <label class="option"><input type="radio" name="priority" value="Integracja z RCP, HR, ERP lub VMS"><span><b>D</b>Integracja z RCP, HR, ERP lub VMS</span></label>
+                </div>
+                <p class="field-error" data-error="priority" role="alert"></p>
+                <div class="step-actions"><button class="button button-secondary prev-step" type="button">← Wstecz</button><button class="button button-primary next-step" type="button">Dalej <span aria-hidden="true">→</span></button></div>
+              </fieldset>
+
+              <fieldset class="form-step contact-step" data-step="3" hidden>
+                <legend>Gdzie możemy się z Tobą skontaktować?</legend>
+                <p class="question-help">Dane wykorzystamy wyłącznie do obsługi tego zapytania.</p>
+
+                <div class="fields-grid">
+                  <label class="field field-wide">Imię i nazwisko *<input type="text" name="name" autocomplete="name" required placeholder="Jan Kowalski"></label>
+                  <label class="field">Firma *<input type="text" name="company" autocomplete="organization" required placeholder="Nazwa firmy"></label>
+                  <label class="field">Stanowisko *<input type="text" name="position" autocomplete="organization-title" required placeholder="Twoje stanowisko"></label>
+                  <label class="field">Telefon *<input type="tel" name="phone" autocomplete="tel" required inputmode="tel" placeholder="+48 000 000 000"></label>
+                  <label class="field">E-mail służbowy *<input type="email" name="email" autocomplete="email" required placeholder="imie@firma.pl"></label>
+                </div>
+
+                <label class="consent">
+                  <input type="checkbox" name="privacy" value="Tak" required>
+                  <span>Zapoznałem(-am) się z <a href="https://polsystem.pl/polityka-prywatnosci/" target="_blank" rel="noopener noreferrer">polityką prywatności</a> oraz informacją o przetwarzaniu moich danych osobowych w celu obsługi zapytania. *</span>
+                </label>
+                <label class="consent">
+                  <input type="checkbox" name="marketing" value="Tak">
+                  <span>(Opcjonalnie) Chcę otrzymywać informacje o produktach i wydarzeniach Polsystem na podany adres e-mail. Zgodę mogę wycofać w każdej chwili.</span>
+                </label>
+                <p class="field-error" data-error="contact" role="alert"></p>
+
+                <div class="step-actions"><button class="button button-secondary prev-step" type="button">← Wstecz</button><button class="button button-primary submit-button" type="submit">Przygotuj zapytanie <span aria-hidden="true">↗</span></button></div>
+
+                <p class="privacy-note">Administratorem Twoich danych jest POLSYSTEM SI Sp. z o.o., S.K.A., ul. Ukraińska 4D, 54-401 Wrocław. Dane z formularza przetwarzamy po to, żeby odpowiedzieć na Twoje zapytanie i przedstawić ofertę (art. 6 ust. 1 lit. b i f RODO). Podanie danych jest dobrowolne, ale bez nich nie odpowiemy. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu oraz skargi do Prezesa UODO. Szczegóły: <a href="https://polsystem.pl/polityka-prywatnosci/" target="_blank" rel="noopener noreferrer">Polityka prywatności</a>.</p>
+              </fieldset>
+            </form>
+
+            <div class="mail-status" id="mail-status" hidden tabindex="-1" aria-live="polite">
+              <span aria-hidden="true">✓</span>
+              <div>
+                <strong>Przygotowaliśmy wiadomość</strong>
+                <p>Program pocztowy powinien się otworzyć. Wyślij wiadomość, aby przekazać zgłoszenie do Polsystem.</p>
+                <p>Jeśli nic się nie otworzyło, napisz na <a href="mailto:biuro@polsystem.pl">biuro@polsystem.pl</a> lub zadzwoń pod <a href="tel:+48692430193">+48 692 430 193</a>.</p>
+              </div>
+            </div>
+
+            <noscript><p class="noscript">Do działania formularza potrzebna jest obsługa JavaScript. Możesz napisać bezpośrednio na <a href="mailto:biuro@polsystem.pl">biuro@polsystem.pl</a>.</p></noscript>
+          </div>
+          <p class="form-assurance">Dane kontaktowe służą wyłącznie do obsługi zapytania.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>POLSYSTEM SI Sp. z o.o., S.K.A. · Wrocław</span>
+      <nav aria-label="Linki prawne">
+        <a href="https://polsystem.pl/system-kontroli-dostepu/">System kontroli dostępu</a>
+        <a href="https://polsystem.pl/polityka-prywatnosci/">Polityka prywatności</a>
+        <a href="https://polsystem.pl/polityka-cookies/">Polityka cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
