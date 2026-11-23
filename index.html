@@ -40,8 +40,8 @@
             </div>
 
             <div class="progress" aria-label="Postęp formularza">
-              <div class="progress-copy"><span id="step-label">Krok 1 z 4</span><span id="progress-value">25%</span></div>
-              <div class="progress-track"><span id="progress-bar"></span></div>
+              <div class="progress-copy"><span id="step-label">Krok 1 z 5</span><span id="progress-value">20%</span></div>
+              <div class="progress-track"><span id="progress-bar" style="width: 20%"></span></div>
             </div>
 
             <form id="lead-form" action="mailto:biuro@polsystem.pl" method="post" enctype="text/plain" novalidate>
@@ -85,7 +85,20 @@
                 <div class="step-actions"><button class="button button-secondary prev-step" type="button">← Wstecz</button><button class="button button-primary next-step" type="button">Dalej <span aria-hidden="true">→</span></button></div>
               </fieldset>
 
-              <fieldset class="form-step contact-step" data-step="3" hidden>
+              <fieldset class="form-step" data-step="3" hidden>
+                <legend>Co chcecie zrobić w pierwszej kolejności?</legend>
+                <p class="question-help">Wybierz najważniejszy cel planowanego wdrożenia.</p>
+                <div class="option-grid option-grid-single">
+                  <label class="option"><input type="radio" name="primary_goal" value="Elektroniczna ewidencja czasu pracy"><span><b>A</b>Elektroniczna ewidencja czasu pracy</span></label>
+                  <label class="option"><input type="radio" name="primary_goal" value="Konsolidacja/ujednolicenie systemów kadrowych"><span><b>B</b>Konsolidacja/ujednolicenie systemów kadrowych</span></label>
+                  <label class="option"><input type="radio" name="primary_goal" value="Wdrożenie portalu pracownika"><span><b>C</b>Wdrożenie portalu pracownika</span></label>
+                  <label class="option"><input type="radio" name="primary_goal" value="Elektroniczne zestawienia danych i automatyczne raporty"><span><b>D</b>Elektroniczne zestawienia danych i automatyczne raporty</span></label>
+                </div>
+                <p class="field-error" data-error="primary_goal" role="alert"></p>
+                <div class="step-actions"><button class="button button-secondary prev-step" type="button">← Wstecz</button><button class="button button-primary next-step" type="button">Dalej <span aria-hidden="true">→</span></button></div>
+              </fieldset>
+
+              <fieldset class="form-step contact-step" data-step="4" hidden>
                 <legend>Gdzie możemy się z Tobą skontaktować?</legend>
                 <p class="question-help">Dane wykorzystamy wyłącznie do obsługi tego zapytania.</p>
 

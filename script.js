@@ -3,6 +3,7 @@
 
   const form = document.getElementById("lead-form");
   const steps = Array.from(form.querySelectorAll(".form-step"));
+  const contactStep = steps[steps.length - 1];
   const progressBar = document.getElementById("progress-bar");
   const progressValue = document.getElementById("progress-value");
   const stepLabel = document.getElementById("step-label");
@@ -69,7 +70,7 @@
   });
 
   function validateContactStep() {
-    const requiredFields = Array.from(steps[3].querySelectorAll("input[required]"));
+    const requiredFields = Array.from(contactStep.querySelectorAll("input[required]"));
     let valid = true;
     requiredFields.forEach(function (field) {
       const fieldValid = field.checkValidity();
@@ -77,7 +78,7 @@
       if (!fieldValid) valid = false;
     });
 
-    const error = steps[3].querySelector('[data-error="contact"]');
+    const error = contactStep.querySelector('[data-error="contact"]');
     if (!valid) {
       error.textContent = "Uzupełnij wymagane pola i zaakceptuj informację o prywatności.";
       const firstInvalid = requiredFields.find(function (field) { return !field.checkValidity(); });
@@ -106,6 +107,7 @@
       "Liczba pracowników: " + selectedValue("company_size"),
       "Obecna metoda ewidencji: " + selectedValue("current_method"),
       "Priorytet: " + selectedValue("priority"),
+      "Pierwszy cel wdrożenia: " + selectedValue("primary_goal"),
       "",
       "Imię i nazwisko: " + data.get("name"),
       "Firma: " + data.get("company"),
